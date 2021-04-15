@@ -7,3 +7,5 @@
 ![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg)
 
 ### 2. Azkaban (Harry Potter-inspired) _[In progress]_.
+
+![](https://fotos.subefotos.com/b430e30c1718a1078e5c15664bf45d63o.jpg)
