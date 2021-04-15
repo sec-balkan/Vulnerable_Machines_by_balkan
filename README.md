@@ -1,4 +1,4 @@
-# Vulnerable Machines by balkan [](https://cdn2.iconfinder.com/data/icons/iconslandgps/PNG/256x256/Pinpoints/Flag3RightBlue.png)
+# Vulnerable Machines by balkan
 
 ## Repository of vulnerable machines created by me _(balkan)_.
 
