@@ -165,7 +165,11 @@ Contenido de _info.txt_:
 
 Una vez con unas credenciales, intentaremos autenticarnos contra nuestro _CMS_ alojado en el servicio _HTTP_.
 
+![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/batflat1.PNG)
+
 Como podemos comprobar, las credenciales son válidas, ahora, buscaremos posibles exploits para nuestro _CMS_.
+
+![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/batflat%202.PNG)
 
 Con una simple búsqueda con la herramienta _searchsploit_, encontramos un posible exploit en la página de [exploitdb] (Batflat CMS 1.3.6 - Authenticated Remote Code Execution), finalmente con _searchsploit -m <exploit>_ nos traemos el fichero al directorio actual.
 
