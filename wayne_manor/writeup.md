@@ -395,7 +395,7 @@ tar -zcf /tmp/web.tar.gz --checkpoint=1 --checkpoint-action=exec=python3 privesc
 
 ¿Cómo? Creando dos archivos en el directorio _/var/www/html_.
 
-Lo primero que haremos será crear una reverse shell en _python_.
+Lo primero que haremos será crear una reverse shell en _python_ (más información [aquí](https://ironhackers.es/herramientas/reverse-shell-cheat-sheet/).
 
 Contenido de _privesc.py_ en el directorio _/var/www/html_:
 
