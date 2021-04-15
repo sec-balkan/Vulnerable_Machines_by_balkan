@@ -121,7 +121,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.69 seconds
 ```
 
-Una vez abierto, entramos gracias a el login anónimo, y en un archivo _.txt_ encontraremos un texto con unas credecianles.
+Una vez abierto, entramos gracias al login anónimo, y en un archivo _.txt_ encontraremos un texto con unas credecianles.
 
 ```sh
 ┌──(root💀kali)-[/home/kali]
@@ -374,7 +374,7 @@ cd /var/www/html && tar -zcf /tmp/web.tar.gz *
 
 Como vemos, con la herramienta _tar_ hace un backup de toda la página web (*), así que, al usar el asterisco para refererirse a todos los archivos, podremos abusar de esa mala configuración de el _wildcard_ (más información [aquí](https://int0x33.medium.com/day-67-tar-cron-2-root-abusing-wildcards-for-tar-argument-injection-in-root-cronjob-nix-c65c59a77f5e) y [aquí](https://gtfobins.github.io/gtfobins/tar/#sudo)).
 
-Resumiendo, lo que vamos a hacer es añadirle dos argumentos a el script del cron, para que ejecute un binario que nosotros le indiquemos.
+Resumiendo, lo que vamos a hacer es añadirle dos argumentos al script del cron, para que ejecute un binario que nosotros le indiquemos.
 
 Este es el script original:
 
@@ -536,7 +536,6 @@ Well... I'll have to get back to the party, Alfred needs me.
 
 
 
-    34d1f91fb2e514b8576fab1a75a89a6b
     3*******************************
 
 
