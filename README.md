@@ -9,5 +9,6 @@
 <details>
   <summary>Spoiler about Wayne Manor</summary>
   
-  Port Knocking, RCE, Cronjobs and sudo permissions.
+  Port Knocking, RCE, Cronjobs and sudoers file.
+  
 </details>
