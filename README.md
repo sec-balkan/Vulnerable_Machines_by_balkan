@@ -1,4 +1,4 @@
-# Vulnerable Machines by balkan [](https://i.pinimg.com/originals/3f/7e/4e/3f7e4eff7c96e9fe4b8b4b1ff3f7bdb5.gif)
+# Vulnerable Machines by balkan [](https://cdn2.iconfinder.com/data/icons/iconslandgps/PNG/256x256/Pinpoints/Flag3RightBlue.png)
 
 ## Repository of vulnerable machines created by me _(balkan)_.
 
@@ -7,5 +7,3 @@
 ![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg)
 
 ### 2. Azkaban (Harry Potter-inspired) _[In progress]_.
-
-![](https://fotos.subefotos.com/b430e30c1718a1078e5c15664bf45d63o.jpg)
