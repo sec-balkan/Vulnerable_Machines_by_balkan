@@ -2,6 +2,6 @@
 
 ## Repository of vulnerable machines created by me.
 
-### [1. Wayne Manor (Batman-inspired)](http://www.limni.net)
+### [1. Wayne Manor (Batman-inspired)](https://github.com/sec-balkan/Vulnerable_Machines/tree/main/wayne_manor)
 
-![alt text](https://i.ibb.co/Ydn8c6F/Wayne-Manor.jpg)
+![alt text](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg)
