@@ -34,7 +34,6 @@ Host is up (0.0012s latency).
 Not shown: 65533 closed ports
 
 PORT   STATE SERVICE
-22/tcp open  ssh
 80/tcp open  http
 MAC Address: 00:0C:29:51:07:3F (VMware)
 
@@ -42,17 +41,12 @@ Nmap done: 1 IP address (1 host up) scanned in 4.01 seconds
 ```
 ```sh
 ┌──(root💀kali)-[/home/kali]
-└─# nmap -sC -sV -p22,80 <ip>
+└─# nmap -sC -sV -p80 <ip>
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 16:50 EDT
 Nmap scan report for waynemanor.com (192.168.51.131)
 Host is up (0.00050s latency).
 
 PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey:
-|   3072 e4:b9:54:24:6c:42:0b:64:30:a4:5f:57:ed:d3:a3:91 (RSA)
-|   256 d5:79:0c:fa:91:fb:8d:f2:e7:86:62:c2:c7:88:8c:43 (ECDSA)
-|_  256 29:0f:34:05:ed:24:1a:f3:79:e2:97:99:cb:bc:a8:0a (ED25519)
 80/tcp open  http    nginx 1.18.0 (Ubuntu)
 |_http-generator: Batflat
 |_http-server-header: nginx/1.18.0 (Ubuntu)
@@ -64,7 +58,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 8.75 seconds
 ```
 
-En base a los resultados obtenidos, accederemos a su página web, en la que podremos ver un _CMS_, como nos indica _nmap_ e inspeccionando _Wayne Manor Blog - Wayne Manor_, el _CMS_ se llama _Batflat_, y en dentro de éste, hay una publicación.
+En base a los resultados obtenidos, vemos que tenemos el servicio _HTTP_ abierto, accederemos a su página web, en la que podremos ver un _CMS_, como nos indica _nmap_ e inspeccionando _Wayne Manor Blog - Wayne Manor_, el _CMS_ se llama _Batflat_, y en dentro de éste, hay una publicación.
 
 ![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/web.PNG)
 
