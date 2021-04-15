@@ -370,7 +370,7 @@ cd /var/www/html && tar -zcf /tmp/web.tar.gz *
 #TO DO: Improve the script.
 ```
 
-Como vemos, con la herramienta _tar_ hace un backup de toda la página web (*), así que, al usar el asterisco para refererirse a todos los archivos, podremos abusar de esa mala configuración de el _wildcard_ (más información [aquí](https://int0x33.medium.com/day-67-tar-cron-2-root-abusing-wildcards-for-tar-argument-injection-in-root-cronjob-nix-c65c59a77f5e) y [aquí](https://gtfobins.github.io/gtfobins/tar/#limited-suid)).
+Como vemos, con la herramienta _tar_ hace un backup de toda la página web (*), así que, al usar el asterisco para refererirse a todos los archivos, podremos abusar de esa mala configuración de el _wildcard_ (más información [aquí](https://int0x33.medium.com/day-67-tar-cron-2-root-abusing-wildcards-for-tar-argument-injection-in-root-cronjob-nix-c65c59a77f5e) y [aquí](https://gtfobins.github.io/gtfobins/tar/#sudo)).
 
 Resumiendo, lo que vamos a hacer es añadirle dos argumentos a el script del cron, para que ejecute un binario que nosotros le indiquemos.
 
