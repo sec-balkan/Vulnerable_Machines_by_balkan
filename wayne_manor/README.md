@@ -9,6 +9,7 @@ Contenido:
 - Cronjobs.
 - Sudoers.
 
+
 ### Sobre la máquina:
 
 - Testeada en VMWare.
@@ -17,6 +18,7 @@ Contenido:
 ```sh
 <ip> waynemanor.com
 ```
+
 
 ### Walktrought:
 
