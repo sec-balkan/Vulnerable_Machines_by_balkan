@@ -20,7 +20,7 @@ Contenido:
 ```
 
 
-### Walktrought:
+### _Walktrought_:
 
 Una vez tengamos acceso a la máquina y sepamos su dirección IP, escanearemos todos los servicios que tenga disponibles.
 
