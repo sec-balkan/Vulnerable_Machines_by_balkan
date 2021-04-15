@@ -65,6 +65,10 @@ Nmap done: 1 IP address (1 host up) scanned in 8.75 seconds
 
 En base a los resultados obtenidos, accederemos a su página web, en la que podremos ver un _CMS_, como nos indica _nmap_ e inspeccionando _Wayne Manor Blog - Wayne Manor_, el _CMS_ se llama _Batflat_, y en dentro de éste, hay una publicación.
 
+![](img/web.jpg)
+
+![](img/publicacion.jpg)
+
 > Knock the door in front of the mansion.
 > Written by Bruce Wayne on September 19, 1939
 
