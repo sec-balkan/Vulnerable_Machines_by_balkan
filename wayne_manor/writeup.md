@@ -543,7 +543,7 @@ Well... I'll have to get back to the party, Alfred needs me.
 
 Congratulations for compromising my first vulnerable machine!
 
-You can follow me on Twitter (@sec_balkan), on GitHub (@sec-balkan) or send me a message on Telegram (@sec_balkan).
+You can follow me on Twitter (@sec_balkan), GitHub (@sec-balkan) or send me a message on Telegram (@sec_balkan).
 
 Thank you!
 ```
