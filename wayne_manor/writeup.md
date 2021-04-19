@@ -11,7 +11,6 @@ Contenido:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg">
-  <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/bat.gif">
 </p>
 
 ### Sobre la máquina:
@@ -550,3 +549,7 @@ You can follow me on Twitter (@sec_balkan), GitHub (@sec-balkan) or send me a me
 
 Thank you!
 ```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/bat.gif">
+</p>
