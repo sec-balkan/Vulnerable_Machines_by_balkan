@@ -9,9 +9,7 @@ Contenido:
 - Cronjobs.
 - Sudoers.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg">
-</p>
+![](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg)
 
 ### Sobre la máquina:
 
