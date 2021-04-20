@@ -13,5 +13,5 @@ Contenido:
 
 ### Download
 
-Puedes descargar la máquina desde la plataforma ![Vulnhub](https://www.vulnhub.com/entry/wayne-manor-1,681/)
+Puedes descargar la máquina desde la plataforma [Vulnhub](https://www.vulnhub.com/entry/wayne-manor-1,681/).
 
