@@ -15,3 +15,7 @@ Contenido:
 
 Puedes descargar la máquina desde la plataforma [Vulnhub](https://www.vulnhub.com/entry/wayne-manor-1,681/).
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines_by_balkan/main/wayne_manor/img/1_V1Z3dmLlOY6A4aNPCTIWxQ.png"/>
+</p>
+
