@@ -10,3 +10,8 @@ Contenido:
 - Sudoers.
 
 ![alt text](https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/Wayne_Manor.jpg)
+
+### Download
+
+Puedes descargar la máquina desde la plataforma ![Vulnhub](https://www.vulnhub.com/entry/wayne-manor-1,681/)
+
