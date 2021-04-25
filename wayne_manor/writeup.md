@@ -548,6 +548,10 @@ You can follow me on Twitter (@sec_balkan), GitHub (@sec-balkan) or send me a me
 Thank you!
 ```
 
+Otros _writeups_:
+
++ https://www.youtube.com/watch?v=SMCvn2Rmhmg by **Proxy Programmer**
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/bat.gif">
 </p>
