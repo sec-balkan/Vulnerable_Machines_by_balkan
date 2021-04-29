@@ -552,7 +552,7 @@ Otros _writeups_:
 
 + https://www.youtube.com/watch?v=SMCvn2Rmhmg by **Proxy Programmer**
 + https://songbird0x1337.gitbook.io/wayne_manor/ by **SongBird0x1337**
-+ http://www.vxer.cn/?id=74 by **Windy*
++ http://www.vxer.cn/?id=74 by **Windy**
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/sec-balkan/Vulnerable_Machines/main/wayne_manor/img/bat.gif">
