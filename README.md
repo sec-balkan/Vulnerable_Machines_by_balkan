@@ -9,8 +9,3 @@
 ### 2. Azkaban (Harry Potter - inspired) _[In progress]_.
 
 ![](https://fotos.subefotos.com/b430e30c1718a1078e5c15664bf45d63o.jpg)
-
-### 3. Valinor - King of the hill (The lord of rings - inspired) _[In progress]_.
-#### _Machine created for privilege escalation workshop_
-
-![](https://fotos.subefotos.com/5ab29638517f26be181a056a605bb87ao.jpg)
